@@ -2,8 +2,7 @@
 <!-- Register Start -->
 <div class="login justify-content-center align-items-center container text-center">
     <div class="container">
-
-        <form id="form_cadastro" encrypte="multipart/form-data" method="post" action="<?php echo base_url(); ?>home">
+        <form id="form_cadastro" encrypte="multipart/form-data" method="post">
             <div class=" login-form form-group">
                 <div class="row">
                     <h1 class="entrar-title justify-content-center container">Cadastro</h1>
@@ -45,7 +44,7 @@
                         <input name="usuario_complemento" id="usario[complemento]" class="form-control" type="text" placeholder="CEP" required>
                     </div>
                     <div class="col-md-12">
-                        <a class="btn" href="home"><span>Voltar</span></a>
+                        <a class="btn" href="Home.php"><span>Voltar</span></a>
                         <button id=" btn-cadastro" class="btn" type="submit" name="Logar" value="Logar">Cadastrar</button>
                     </div>
                 </div>

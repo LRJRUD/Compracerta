@@ -8,7 +8,7 @@
     <title><?php echo $titulo ?></title>
 
     <!-- Favicon -->
-    <link href="img/logo-nave2.png" rel="icon">
+    <link rel="icon" href="img/logo-nave2.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Google Fonts -->
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="lib/slick/slick-theme.css">
 
     <!-- Personal Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <!-- Bottom Bar Start -->
@@ -33,7 +33,7 @@
         <div class="row align-items-center">
             <div class="col-md-3">
                 <div class="logo">
-                    <a href="Home">
+                    <a href="Home.php">
                         <img src="img/logo-marca.png" alt="Logo">
                     </a>
                 </div>
@@ -43,18 +43,18 @@
                     <input type="text" placeholder="Pesquisar...">
                     <button><i class="fa fa-search"></i></button>
                 </div>
-                </div>
+            </div>
             <div class="col-md-3">
                 <div class="user">
-                    <a href="Wishlist" class="btn wishlist">
+                    <a href="Wishlist.php" class="btn wishlist">
                         <i class="fa fa-heart"></i>
                         <span>(0)</span>
                     </a>
-                    <a href="Cart" class="btn cart">
+                    <a href="Cart.php" class="btn cart">
                         <i class="fa fa-shopping-cart"></i>
                         <span>(0)</span>
                     </a>
-                    <a href="Login" class="btn login">
+                    <a href="Login.php" class="btn login">
                         <i class="fas fa-user"></i>
                         <span>Login
                             <!-- Substituir por < ?php echo $_POST["Classe"] ?> apos logado-->
@@ -70,8 +70,8 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md bg-dark navbar-dark">
                 <div class="navbar-nav mr-auto justify-content-center">
-                    <a href="Myaccount" class="nav-item nav-link">Minha conta</a>
-                    <a href="Contact" class="nav-item nav-link">Entre em contato</a>
+                    <a href="Myaccount.php" class="nav-item nav-link">Minha conta</a>
+                    <a href="Contact.php" class="nav-item nav-link">Entre em contato</a>
                 </div>
             </nav>
         </div>

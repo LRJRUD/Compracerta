@@ -19,6 +19,7 @@ class UsuarioDAO
             $sql->bindParam("n_Casa", $n_Casa);
             $sql->bindParam("complemento", $complemento);
 
+
             //get
             $cpf = $user->getCpf();
             $nome = $user->getNome();

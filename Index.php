@@ -16,6 +16,7 @@ if (isset($_GET['url'])) //se estiver preenchida, pega o valor
       $controlador->processaRequisicao();
       break;
     default:
+
       break;
   }
 } else                     //senão, vai para uma página padrão, neste caso a home do site

@@ -1,5 +1,6 @@
 <?php
-class Usuario extends CI_Model
+require 'UsuarioDAO.php';
+class Usuario
 {
 
     private $id_usuario;
@@ -13,7 +14,7 @@ class Usuario extends CI_Model
     private $rua;
     private $n_Casa;
     private $complemento;
-    private $is_online;
+    
 
     //Get´s
     function getId_Usuario()
@@ -55,12 +56,6 @@ class Usuario extends CI_Model
     {
         return $this->bairro;
     }
-
-    function getComplemento()
-    {
-        return $this->complemento;
-    }
-
     function getRua()
     {
         return $this->rua;
@@ -71,11 +66,11 @@ class Usuario extends CI_Model
         return $this->n_Casa;
     }
 
-    function getIs_Online()
+    function getComplemento()
     {
-        return $this->is_online;
+        return $this->complemento;
     }
-
+       
     //Set´s
     public function setId_Usuario($id_usuario)
     {
@@ -113,18 +108,26 @@ class Usuario extends CI_Model
     {
         $this->rua = $rua;
     }
-    public function setComplemento($complemento)
-    {
-        $this->complemento = $complemento;
-    }
+
     public function setN_Casa($n_Casa)
     {
         $this->n_Casa = $n_Casa;
     }
 
-    public function setIs_Online($is_online)
+    public function setComplemento($complemento)
     {
-        $this->is_online = $is_online;
+        $this->complemento = $complemento;
     }
+   
+    public function addUsuario(){
+        $UsuarioDAO = new UsuarioDAO();
+        $UsuarioDAO->addUsuario($this);
+   }
+
+   public function delUsuario(){
+       $UsuarioDAO = new UsuarioDAO();
+       $UsuarioDAO->delUsuario($this);
+   }
+    
 }
 ?>

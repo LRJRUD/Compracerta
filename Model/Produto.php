@@ -14,7 +14,7 @@ class Produto
   private $img_produto;
 
   //Get's
-  function getIdproduto()
+  function getIDproduto()
   {
     return $this->IDproduto;
   }
@@ -49,7 +49,7 @@ class Produto
 
   //Set's
 
-  public function setIdproduto($IDproduto)
+  public function setIDproduto($IDproduto)
   {
     $this->IDproduto = $IDproduto;
   }

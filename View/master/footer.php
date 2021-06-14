@@ -55,7 +55,7 @@
                 <div class="col-sm-4">
                     <div class="payment-method">
                         <h2>Aceitamos:</h2>
-                        <img src="Public/img/payment-method.png" alt="Payment Method" />
+                        <img src="img/payment-method.png" alt="Payment Method" />
                     </div>
                 </div>
                 <div class="col-sm-4 copyright justify-content-center container text-center">

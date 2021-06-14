@@ -1,72 +1,84 @@
-<?php 
+<?php
 
-require 'ProdutoDAO.php';
+require 'PedidoDAO.php';
 
-class Produto{
-  private $id_produto;
-  private $valor_total;
-  private $estadopedido;
-  private $quantidade_item;
-  private $nome;
-  private $nome_cliente;
-  private $endereco;
-  private $telefone;
+class Pedido
+{
+  private $IDproduto;
+  private $NOMEproduto;
+  private $quantidade;
+  private $marca;
+  private $descricao;
+  private $validade;
+  private $tipo;
+  private $img_produto;
 
   //Get's
-  function get(){
-return $this-> ;
+  function getIdproduto()
+  {
+    return $this->IDproduto;
   }
-  function get(){
-return $this-> ;
+  function getNomeProduto()
+  {
+    return $this->NOMEproduto;
   }
-  function get(){
-return $this-> ;
+  function getQuantidade()
+  {
+    return $this->quantidade;
   }
-  function get(){
-return $this-> ;
+  function getMarca()
+  {
+    return $this->marca;
   }
-  function get(){
-return $this-> ;
+  function getDescricao()
+  {
+    return $this->descricao;
   }
-  function get(){
-return $this-> ;
+  function getValidade()
+  {
+    return $this->validade;
   }
-  function get(){
-return $this-> ;
+  function getTipo()
+  {
+    return $this->tipo;
   }
-  function get(){
-return $this-> ;
-  }
-  function get(){
-return $this-> ;
+  function getImg_Produto()
+  {
+    return $this->img_produto;
   }
 
   //Set's
 
-  public function set(){
-    $this-> = $;
+  public function setIdproduto($IDproduto)
+  {
+    $this->IDproduto = $IDproduto;
   }
-  public function set(){
-    $this-> = $;
+  public function setNomeProduto($NOMEproduto)
+  {
+    $this->NOMEproduto = $NOMEproduto;
   }
-  public function set(){
-    $this-> = $;
+  public function setQuantidade($quantidade)
+  {
+    $this->quantiade = $quantidade;
   }
-  public function set(){
-    $this-> = $;
+  public function setMarca($marca)
+  {
+    $this->marca = $marca;
   }
-  public function set(){
-    $this-> = $;
+  public function setDescricao($descricao)
+  {
+    $this->descricao = $descricao;
   }
-  public function set(){
-    $this-> = $;
+  public function setValidade($validade)
+  {
+    $this->validade = $validade;
   }
-  public function set(){
-$this-> = $;
+  public function setTipo($tipo)
+  {
+    $this->tipo = $tipo;
   }
-  public function set(){
-    $this-> = $;
+  public function setImg_Produto($img_produto)
+  {
+    $this->img_produto = $img_produto;
   }
 }
-
-?>

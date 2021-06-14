@@ -1,13 +1,6 @@
 <?php
 
-namespace App\Controllers;
-
-namespace App\Controllers\Core;
-
-use CI_Controller;
-use Usuario;
-
-class controllerUser extends CI_Controller
+class controllerUser
 {
 
   public $Usuario;

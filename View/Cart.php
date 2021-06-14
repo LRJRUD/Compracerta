@@ -1,4 +1,5 @@
-<?php include('master/header.php'); ?>
+<?php include('master/header.php');
+$pageTitle = 'Carrinho'; ?>
 <main class="main">
     <section>
 

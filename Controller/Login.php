@@ -1,12 +1,10 @@
 <?php
+class Login
+{
 
-namespace App\Controllers;
-
-class Login extends BaseController {
-
-    public function index() {
-        $data['titulo'] = "CompraCerta - Login";
-        return view('Login', $data);
+    public function index()
+    {
+        // $data['titulo'] = "CompraCerta - Login";
+        // return view('Login', $data);
     }
-
 }

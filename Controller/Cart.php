@@ -1,12 +1,10 @@
 <?php
+class Cart
+{
 
-namespace App\Controllers;
-
-class Cart extends BaseController {
-
-    public function index() {
-        $data['titulo'] = "CompraCerta - Carrinho";
-        return view('Cart', $data);
+    public function index()
+    {
+        // $data['titulo'] = "CompraCerta - Carrinho";
+        // return view('Cart', $data); 
     }
-
 }

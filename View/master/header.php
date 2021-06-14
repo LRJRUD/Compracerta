@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title><?php echo $titulo ?></title>
+    <title><?php echo $pageTitle ?></title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/logo-nave2.png">

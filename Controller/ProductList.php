@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Controllers;
+class ProductList
+{
 
-class ProductList extends BaseController {
-
-    public function index() {
-        $data['titulo'] = "CompraCerta - Produtos";
-        return view('ProductList', $data);
+    public function index()
+    {
+        $this->pageTitle = 'CompraCerta - Produtos';
+        // $data['titulo'] = "CompraCerta - Produtos";
+        // return view('ProductList', $data);
     }
-
 }

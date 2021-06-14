@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Controllers;
+class Home
+{
 
-class Home extends BaseController {
+    public function index()
+    {
 
-    public function index() {
-        $data['titulo'] = "CompraCerta - O mercado ao alcance de um clique.";
-        return view('Home', $data);
+        $pageTitle = "CompraCerta - O mercado ao alcance de um clique.";
+        // $data['titulo'] = "CompraCerta - O mercado ao alcance de um clique.";
+        // return view('Home', $data);
     }
-
 }

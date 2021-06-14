@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Controllers;
+class Myaccount
+{
 
-class Myaccount extends BaseController {
-
-    public function index() {
-        $data['titulo'] = "CompraCerta - Minha conta ";
-        return view('Myaccount', $data);
+    public function index()
+    {
+        // $data['titulo'] = "CompraCerta - Minha conta ";
+        // return view('Myaccount', $data);
     }
-
 }

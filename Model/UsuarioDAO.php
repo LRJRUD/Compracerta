@@ -1,7 +1,7 @@
-<?php include_once"Conexao.php"; 
+<?php require "Conexao.php"; 
 
-
-    function addUsuario($user){
+class UsuarioDAO{
+    public function addUsuario($user){
        try{
            $minhaConexao = Conexao::getConexao();
            $sql = $minhaConexao->prepare("insert into mercado.usuario (cpf, nome, email, senha, fone, cep, bairro, rua, n_Casa, complemento)
@@ -43,7 +43,7 @@
         }
     }
 
-     function delUsuario($user){
+    public function delUsuario($user){
         try{
             $minhaConexao = Conexao::getConexao();
             $sql = $minhaConexao->prepare("delete from mercado.usuario where id_usuario=:id_usuario");
@@ -58,5 +58,4 @@
              exit();
          }
      }
-
-?>
+    }

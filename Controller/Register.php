@@ -1,14 +1,17 @@
-<?php 
+<?php
 require "Model/Usuario.php";
-class Register{
-   private $usuario;
+class Register
+{
+    private $usuario;
 
-   public function __construct(){
-      $this->usuario = new Usuario();
-  }
-   
-   public function processaRequisicao(){
-      //receber os dados do formulario e setar o objeto
+    public function __construct()
+    {
+        $this->usuario = new Usuario();
+    }
+
+    public function processaRequisicao()
+    {
+        //receber os dados do formulario e setar o objeto
 
         $this->usuario->setNome($_POST['nome']);
         $this->usuario->setEmail($_POST['email']);
@@ -21,10 +24,7 @@ class Register{
         $this->usuario->setComplemento($_POST["complemento"]);
 
         $this->usuario->addUsuario();
- 
-      header('Location:Home.php', true,302);
-   }
+
+        header('Location:Home.php', true, 302);
+    }
 }
-   
-   
-?>

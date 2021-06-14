@@ -1,8 +1,5 @@
 <?php
-
-namespace App\Controllers;
-
-class consulta_cep extends BaseController
+class consulta_cep
 {
 
   public function ajax()

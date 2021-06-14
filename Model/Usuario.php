@@ -1,5 +1,5 @@
 <?php
-require 'UsuarioDAO.php';
+require "UsuarioDAO.php";
 class Usuario
 {
 
@@ -14,7 +14,7 @@ class Usuario
     private $rua;
     private $n_Casa;
     private $complemento;
-    
+
 
     //Get´s
     function getId_Usuario()
@@ -70,7 +70,7 @@ class Usuario
     {
         return $this->complemento;
     }
-       
+
     //Set´s
     public function setId_Usuario($id_usuario)
     {
@@ -118,16 +118,16 @@ class Usuario
     {
         $this->complemento = $complemento;
     }
-   
-    public function addUsuario(){
+
+    public function addUsuario()
+    {
         $UsuarioDAO = new UsuarioDAO();
         $UsuarioDAO->addUsuario($this);
-   }
+    }
 
-   public function delUsuario(){
-       $UsuarioDAO = new UsuarioDAO();
-       $UsuarioDAO->delUsuario($this);
-   }
-    
+    public function delUsuario()
+    {
+        $UsuarioDAO = new UsuarioDAO();
+        $UsuarioDAO->delUsuario($this);
+    }
 }
-?>

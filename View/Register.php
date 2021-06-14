@@ -2,18 +2,17 @@
 <!-- Register Start -->
 <div class="login justify-content-center align-items-center container text-center">
     <div class="container">
-        <form id="form_cadastro" action="addUsuario" method="post">
+        <form id="Register" action="addUsuario" method="post">
             <div class="login-form form-group">
                 <div class="row">
                     <h1 class="entrar-title justify-content-center container">Cadastro</h1>
                     <div class="col-md-6">
                         <label>Nome</label>
-                        <input name="nome" id="nome" class="form-control" type="text" placeholder="First Name" required>
+                        <input name="nome" id="nome" class="form-control" type="text" placeholder="Nome Completo" required>
                     </div>
                     <div class="col-md-6">
                         <label>Email</label>
                         <input name="email" id="email" class="form-control" type="email" placeholder="E-mail" required>
-
                     </div>
                     <div class="col-md-6">
                         <label>Senha</label>
@@ -41,7 +40,7 @@
                     </div>
                     <div class="col-md-6">
                         <label>Complemento</label>
-                        <input name="complemento" id="complemento" class="form-control" type="text" placeholder="CEP" required>
+                        <input name="complemento" id="complemento" class="form-control" type="text" placeholder="Complemento" required>
                     </div>
                     <div class="col-md-12">
                         <a class="btn" href="Home.php"><span>Voltar</span></a>

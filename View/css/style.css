@@ -2038,6 +2038,65 @@ span {
   border: 1px solid #ff7400;
 }
 
+.checkout .card{
+    border: none !important;
+    max-width: 450px !important;
+    border-radius: 15px !important;
+    margin: 150px 0 150px !important;
+    padding: 35px !important;
+    padding-bottom: 20px !important;
+}
+
+.checkout .heading{
+  color: #C1C1C1 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.checkout .img{
+  transform: translate(160px, -10px) !important;
+}
+
+.checkout .img:hover {
+    cursor: pointer !important;
+}
+
+.checkout .text-warning {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #edb537 !important;
+}
+
+#cno {
+    transform: translateY(-10px) !important;
+}
+
+.checkout .input {
+    border-bottom: 1.5px solid #E8E5D2 !important;
+    font-weight: bold !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+}
+
+.checkout .form-group input:focus {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.checkout.col-sm-5 {
+    padding-left: 90px !important;
+}
+
+.checkout .btn {
+    background: #F3A002 !important;
+    border: none !important;
+    border-radius: 30px !important;
+}
+
+.checkout .btn:focus {
+    box-shadow: none !important;
+}
+
 /**********************************/
 /********* My Account CSS *********/
 /**********************************/

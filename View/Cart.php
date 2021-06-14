@@ -147,7 +147,7 @@ $pageTitle = 'Carrinho'; ?>
                                             </div>
                                             <div class="cart-btn">
                                                 <button>Atualizar carrinho</button>
-                                                <button onclick="location.href = 'Checkout'">Pagamentos</button>
+                                                <button onclick="location.href = 'Checkout.php'">Pagamentos</button>
                                             </div>
                                         </div>
                                     </div>

@@ -1,12 +1,13 @@
 <?php include('master/header.php'); ?>
 <main class="main">
     <section>
+
         <body>
             <!-- Breadcrumb Start -->
             <div class="breadcrumb-wrap">
                 <div class="container-fluid">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="Home">Página inicial</a></li>
+                        <li class="breadcrumb-item"><a href="Home.php">Página inicial</a></li>
                         <li class="breadcrumb-item active">Verificação</li>
                     </ul>
                 </div>
@@ -15,7 +16,7 @@
 
             <!-- Checkout Start -->
             <div class="checkout">
-                <div class="container-fluid"> 
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="checkout-inner">

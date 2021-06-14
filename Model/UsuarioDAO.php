@@ -8,7 +8,6 @@ class UsuarioDAO
             $minhaConexao = Conexao::getConexao();
             $sql = $minhaConexao->prepare("insert into mercado.usuario (cpf, nome, email, senha, fone, cep, bairro, rua, n_Casa, complemento)
             values (:cpf, :nome,:email, :senha, :fone, :cep, :bairro, :rua, :n_Casa, :complemento)");
-            $sql->bindParam("id_usuario", $id_usuario);
             $sql->bindParam("cpf", $cpf);
             $sql->bindParam("nome", $nome);
             $sql->bindParam("email", $email);
@@ -18,9 +17,9 @@ class UsuarioDAO
             $sql->bindParam("bairro", $bairro);
             $sql->bindParam("rua", $rua);
             $sql->bindParam("n_Casa", $n_Casa);
-            $sql->bindParam("complemento", $comlemento);
+            $sql->bindParam("complemento", $complemento);
+
             //get
-            $id_usuario = $user->getId_Usuario();
             $cpf = $user->getCpf();
             $nome = $user->getNome();
             $email = $user->getEmail();

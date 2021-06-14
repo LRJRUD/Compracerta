@@ -1,11 +1,8 @@
 <?php
 require "Model/Usuario.php";
-class FormUsuario{
+class ControllerFormUser{
     
     public function processaRequisicao(){
         require "View/Register.php";
     }
 }
-    
-    
-?>

@@ -37,7 +37,7 @@
                     </div>
                     <div class="col-md-6">
                         <label>Numero da casa</label>
-                        <input name="un_casa" id="n_casa" class="form-control" type="text" placeholder="Numero da casa" required>
+                        <input name="n_Casa" id="n_Casa" class="form-control" type="text" placeholder="Numero da casa" required>
                     </div>
                     <div class="col-md-6">
                         <label>Complemento</label>

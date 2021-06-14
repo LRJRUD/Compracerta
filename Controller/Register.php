@@ -12,7 +12,6 @@ class Register
     public function processaRequisicao()
     {
         //receber os dados do formulario e setar o objeto
-
         $this->usuario->setNome($_POST['nome']);
         $this->usuario->setEmail($_POST['email']);
         $this->usuario->setSenha($_POST['senha']);

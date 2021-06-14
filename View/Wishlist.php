@@ -7,8 +7,8 @@
             <div class="breadcrumb-wrap">
                 <div class="container-fluid">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="Home">Página inicial</a></li>
-                        <li class="breadcrumb-item"><a href="Myaccount">Minha conta</a></li>
+                        <li class="breadcrumb-item"><a href="Home.php">Página inicial</a></li>
+                        <li class="breadcrumb-item"><a href="Myaccount.php">Minha conta</a></li>
                         <li class="breadcrumb-item active">Lista de desejos</li>
                     </ul>
                 </div>

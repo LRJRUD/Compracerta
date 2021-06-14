@@ -5,8 +5,8 @@
     <div class="breadcrumb-wrap">
         <div class="container-fluid">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="Home">Página inicial</a></li>
-                <li class="breadcrumb-item"><a href="ProductList">Produtos</a></li>
+                <li class="breadcrumb-item"><a href="Home.php">Página inicial</a></li>
+                <li class="breadcrumb-item"><a href="ProductList.php">Produtos</a></li>
                 <li class="breadcrumb-item active">Detalhes de Produtos</li>
             </ul>
         </div>
@@ -181,7 +181,7 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
+                                        <a href="ProductDetail.php">
                                             <img src="img/product-10.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
@@ -209,7 +209,7 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
+                                        <a href="ProductDetail.php">
                                             <img src="img/product-8.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
@@ -237,7 +237,7 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
+                                        <a href="ProductDetail.php">
                                             <img src="img/product-6.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
@@ -265,7 +265,7 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
+                                        <a href="ProductDetail.php">
                                             <img src="img/product-4.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">

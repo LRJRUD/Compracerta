@@ -26,7 +26,7 @@
                                 <a class="nav-link" id="payment-nav" data-toggle="pill" href="#payment-tab" role="tab"><i class="fa fa-credit-card"></i>Forma de pagamento</a>
                                 <a class="nav-link" id="address-nav" data-toggle="pill" href="#address-tab" role="tab"><i class="fa fa-map-marker-alt"></i>Endereço</a>
                                 <a class="nav-link" id="account-nav" data-toggle="pill" href="#account-tab" role="tab"><i class="fa fa-user"></i>Detalhes da conta</a>
-                                <a class="nav-link" href="Home"><i class="fa fa-sign-out-alt"></i>Sair</a>
+                                <a class="nav-link" href="Home.php"><i class="fa fa-sign-out-alt"></i>Sair</a>
                             </div>
                         </div>
                         <div class="col-md-9">

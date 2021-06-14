@@ -9,28 +9,28 @@
                     <nav class="navbar bg-light">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="ProductList"><i class="fa fa-thermometer-three-quarters"></i>Congelados</a>
+                                <a class="nav-link" href="ProductList.php"><i class="fa fa-thermometer-three-quarters"></i>Congelados</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ProductList"><i class="fa fa-beer"></i>Bebidas</a>
+                                <a class="nav-link" href="ProductList.php"><i class="fa fa-beer"></i>Bebidas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ProductList"><i class="fa fa-birthday-cake"></i>Mercearia</a>
+                                <a class="nav-link" href="ProductList.php"><i class="fa fa-birthday-cake"></i>Mercearia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ProductList"><i class="fas fa-allergies"></i>Produtos de Limpeza</a>
+                                <a class="nav-link" href="ProductList.php"><i class="fas fa-allergies"></i>Produtos de Limpeza</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ProductList"><i class="fa fa-bath"></i>Higiene Pessoal e Perfumaria</a>
+                                <a class="nav-link" href="ProductList.php"><i class="fa fa-bath"></i>Higiene Pessoal e Perfumaria</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ProductList"><i class="fas fa-cheese"></i>Frios e laticínios</a>
+                                <a class="nav-link" href="ProductList.php"><i class="fas fa-cheese"></i>Frios e laticínios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ProductList"><i class="fas fa-drumstick-bite"></i>Carne, Aves e Peixes</a>
+                                <a class="nav-link" href="ProductList.php"><i class="fas fa-drumstick-bite"></i>Carne, Aves e Peixes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ProductList"><i class="fas fa-toilet-paper"></i>Embalagens e Descartáveis</a>
+                                <a class="nav-link" href="ProductList.php"><i class="fas fa-toilet-paper"></i>Embalagens e Descartáveis</a>
                             </li>
                         </ul>
                     </nav>
@@ -38,13 +38,13 @@
                 <div class="col-md-6">
                     <div class="header-slider normal-slider">
                         <div class="header-slider-item">
-                            <a href="ProductList"><img src="img/carrossel1.png" alt="Slider Image" /></a>
+                            <a href="ProductList.php"><img src="img/carrossel1.png" alt="Slider Image" /></a>
                         </div>
                         <div class="header-slider-item">
-                            <a href="ProductList"><img src="img/carrossel2.png" alt="Slider Image" /></a>
+                            <a href="ProductList.php"><img src="img/carrossel2.png" alt="Slider Image" /></a>
                         </div>
                         <div class="header-slider-item">
-                            <a href="ProductList"><img src="img/carrossel3.png" alt="Slider Image" /></a>
+                            <a href="ProductList.php"><img src="img/carrossel3.png" alt="Slider Image" /></a>
                         </div>
                     </div>
                 </div>
@@ -210,7 +210,7 @@
                 <div class="col-lg-3">
                     <div class="product-item">
                         <div class="product-title">
-                            <a href="ProductDetail" name="Product">Frango Inteiro Resfriado Kg <br name="Brand"> Ad'oro</a>
+                            <a href="ProductDetail.php" name="Product">Frango Inteiro Resfriado Kg <br name="Brand"> Ad'oro</a>
                             <div class="ratting">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -219,21 +219,21 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-image">
-                                <a href="ProductDetail">
+                                <a href="ProductDetail.php">
                                     <img src="img/Produtos/frango-inteiro.jpg" alt="Product Image">
                                 </a>
                             </div>
                             <h3><span>R$ </span>6,52 /KG
-                                <a href="Wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="product-item">
                         <div class="product-title">
-                            <a href="ProductDetail" name="Product">Achocolatado em Pó lata 400g <br name="Brand"> Nescau 2.0</a>
+                            <a href="ProductDetail.php" name="Product">Achocolatado em Pó lata 400g <br name="Brand"> Nescau 2.0</a>
                             <div class="ratting">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -242,21 +242,21 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-image">
-                                <a href="ProductDetail">
+                                <a href="ProductDetail.php">
                                     <img src="img/Produtos/nescau-20.png" alt="Product Image">
                                 </a>
                             </div>
                             <h3><span>R$ </span>5,79 /UN
-                                <a href="Wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="product-item">
                         <div class="product-title">
-                            <a href="ProductDetail" name="Product">Creme de Avelã pote 650g <br name="Brand">Nutella</a>
+                            <a href="ProductDetail.php" name="Product">Creme de Avelã pote 650g <br name="Brand">Nutella</a>
                             <div class="ratting">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -265,21 +265,21 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-image">
-                                <a href="ProductDetail">
+                                <a href="ProductDetail.php">
                                     <img src="img/Produtos/nutella-pote.jpg" alt="Product Image">
                                 </a>
                             </div>
                             <h3><span>R$ </span>29,34/POTE
-                                <a href="Wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="product-item">
                         <div class="product-title">
-                            <a href="ProductDetail" name="Product">Arroz tipo 1 pacote 5kg <br name="Brand"> Namorado</a>
+                            <a href="ProductDetail.php" name="Product">Arroz tipo 1 pacote 5kg <br name="Brand"> Namorado</a>
                             <div class="ratting">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -288,21 +288,21 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-image">
-                                <a href="ProductDetail">
+                                <a href="ProductDetail.php">
                                     <img src="img/Produtos/arroz-namorado.png" alt="Product Image">
                                 </a>
                             </div>
                             <h3><span>R$ </span>23,02 /PCT
-                                <a href="Wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="product-item">
                         <div class="product-title">
-                            <a href="ProductDetail" name="Product">Feijão Carioca pacote 1kg <br name="Brand"> Camil</a>
+                            <a href="ProductDetail.php" name="Product">Feijão Carioca pacote 1kg <br name="Brand"> Camil</a>
                             <div class="ratting">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -311,14 +311,14 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-image">
-                                <a href="ProductDetail">
+                                <a href="ProductDetail.php">
                                     <img src="img/Produtos/feijao-camil.png" alt="Product Image">
                                 </a>
                             </div>
                             <h3><span>R$ </span>7,59 /PCT
-                                <a href="Wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>
@@ -355,7 +355,7 @@
                 <div class="col-lg-3">
                     <div class="product-item">
                         <div class="product-title">
-                            <a href="ProductDetail" name="Product">Cerveja long neck 330ml <br name="Brand"> Heineken</a>
+                            <a href="ProductDetail.php" name="Product">Cerveja long neck 330ml <br name="Brand"> Heineken</a>
                             <div class="ratting">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -364,21 +364,21 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-image">
-                                <a href="ProductDetail">
+                                <a href="ProductDetail.php">
                                     <img src="img/Produtos/cerveja-heineken.jpg" alt="Product Image">
                                 </a>
                             </div>
                             <h3><span>R$ </span>5,39 /UN
-                                <a href="Wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="product-item">
                         <div class="product-title">
-                            <a href="ProductDetail" name="Product">Cerveja lata 350ml <br name="Brand"> Itaipava</a>
+                            <a href="ProductDetail.php" name="Product">Cerveja lata 350ml <br name="Brand"> Itaipava</a>
                             <div class="ratting">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -387,21 +387,21 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-image">
-                                <a href="ProductDetail">
+                                <a href="ProductDetail.php">
                                     <img src="img/Produtos/cerveja-itaipava.jpg" alt="Product Image">
                                 </a>
                             </div>
                             <h3><span>R$ </span>2,15 /UN
-                                <a href="Wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="product-item">
                         <div class="product-title">
-                            <a href="ProductDetail" name="Product">Sonho de Valsa <br name="Brand">Pacote 1kg</a>
+                            <a href="ProductDetail.php" name="Product">Sonho de Valsa <br name="Brand">Pacote 1kg</a>
                             <div class="ratting">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -410,21 +410,21 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-image">
-                                <a href="ProductDetail">
+                                <a href="ProductDetail.php">
                                     <img src="img/Produtos/bombom-valsa.jpg" alt="Product Image">
                                 </a>
                             </div>
                             <h3><span>R$</span>30,99/PCT
-                                <a href="Wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="product-item">
                         <div class="product-title">
-                            <a href="ProductDetail" name="Product">Farinha de trigo pacote 1kg<br name="Brand">Dona Benta</a>
+                            <a href="ProductDetail.php" name="Product">Farinha de trigo pacote 1kg<br name="Brand">Dona Benta</a>
                             <div class="ratting">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -433,21 +433,21 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-image">
-                                <a href="ProductDetail">
+                                <a href="ProductDetail.php">
                                     <img src="img/Produtos/farinha-benta.jpg" alt="Product Image">
                                 </a>
                             </div>
                             <h3><span>R$ </span>3,77 /PCT
-                                <a href="Wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="product-item">
                         <div class="product-title">
-                            <a href="ProductDetail">Refrigerante 1L<br name="Brand">Coca Cola</a>
+                            <a href="ProductDetail.php">Refrigerante 1L<br name="Brand">Coca Cola</a>
                             <div class="ratting">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -456,14 +456,14 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <div class="product-image">
-                                <a href="ProductDetail">
+                                <a href="ProductDetail.php">
                                     <img src="img/Produtos/coca-cola.png" alt="Product Image">
                                 </a>
                             </div>
                             <h3><span>R$ </span>6,58 /UN
-                                <a href="Wishlist"><i class="fa fa-heart"></i></a>
+                                <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>

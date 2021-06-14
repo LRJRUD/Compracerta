@@ -15,11 +15,11 @@
                         <input class="form-control" name="senha" id="usuario_senha" type="password" placeholder="">
                     </div>
                     <div class="col-md-12">
-                        <a class="btn" href="home"><span>Voltar</span></a>
+                        <a class="btn" href="home.php"><span>Voltar</span></a>
                         <button class="btn" type="submit" name="Continuar" value="Logar">Continuar</button>
                     </div>
                     <div class="col-md-12">
-                        <p style="margin-top: 10px;">Novo por aqui? <a href="Register">crie uma conta gratis!</a></p>
+                        <p style="margin-top: 10px;">Novo por aqui? <a href="Register.php">crie uma conta gratis!</a></p>
                     </div>
                 </div>
             </div>

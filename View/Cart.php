@@ -8,7 +8,7 @@ $pageTitle = 'Carrinho'; ?>
             <div class="breadcrumb-wrap">
                 <div class="container-fluid">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="Home">Página inicial</a></li>
+                        <li class="breadcrumb-item"><a href="Home.php">Página inicial</a></li>
                         <li class="breadcrumb-item active">Carrinho</li>
                     </ul>
                 </div>

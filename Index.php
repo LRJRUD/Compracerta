@@ -7,12 +7,12 @@ if (isset($_GET['url'])) //se estiver preenchida, pega o valor
   switch ($url) {
     case "NOVOUSUARIO":
       require "Controller/ControllerFormUser.php";
-      $controlador = new ControllerFormUser();
+      $controlador = new ControllerFormUser ();
       $controlador->processaRequisicao();
       break;
     case "DELETARUSUARIO":
       require "Controller/ControllerDeleteUser.php";
-      $controlador = new ControllerDeleteUser();
+      $controlador = new ControllerDeleteUser ();
       $controlador->processaRequisicao();
       break;
     default:

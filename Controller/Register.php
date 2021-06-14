@@ -21,8 +21,9 @@ class Register{
         $this->usuario->setComplemento($_POST["complemento"]);
 
         $this->usuario->addUsuario();
- 
+        
       header('Location:Home.php', true,302);
+      
    }
 }
    

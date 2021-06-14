@@ -1,84 +1,83 @@
-<?php
+<?php 
 
 require 'PedidoDAO.php';
 
-class Pedido
-{
-  private $IDproduto;
-  private $NOMEproduto;
-  private $quantidade;
-  private $marca;
-  private $descricao;
-  private $validade;
-  private $tipo;
-  private $img_produto;
+class Pedido{
+  private $id_pedido;
+  private $valor_total;
+  private $estadopedido;
+  private $quantidade_item;
+  private $nome;
+  private $nome_cliente;
+  private $endereco;
+  private $telefone;
 
   //Get's
-  function getIdproduto()
-  {
-    return $this->IDproduto;
+  function getID_pedido(){
+return $this->id_pedido ;
   }
-  function getNomeProduto()
-  {
-    return $this->NOMEproduto;
+  function getValor_total(){
+return $this->valor_total;
   }
-  function getQuantidade()
-  {
-    return $this->quantidade;
+  function getEstadopedido(){
+return $this->estadopedido;
   }
-  function getMarca()
-  {
-    return $this->marca;
+  function getQuantidade_item(){
+return $this->quantidade_item;
   }
-  function getDescricao()
-  {
-    return $this->descricao;
+  function getNome(){
+return $this->nome;
   }
-  function getValidade()
-  {
-    return $this->validade;
+  function getNome_cliente(){
+return $this->nome_cliente;
   }
-  function getTipo()
-  {
-    return $this->tipo;
+  function getEndereco(){
+return $this->endereco;
   }
-  function getImg_Produto()
-  {
-    return $this->img_produto;
+  function getTelefone(){
+return $this->telefone ;
   }
+
 
   //Set's
 
-  public function setIdproduto($IDproduto)
-  {
-    $this->IDproduto = $IDproduto;
+  public function setId_pedido($id_pedido){
+    $this->id_pedido = $id_pedido;
   }
-  public function setNomeProduto($NOMEproduto)
-  {
-    $this->NOMEproduto = $NOMEproduto;
+  public function setValor_pedido($valor_pedido){
+    $this->valor_pedido = $valor_pedido;
   }
-  public function setQuantidade($quantidade)
-  {
-    $this->quantiade = $quantidade;
+  public function setEstadopedido($estadopedido){
+    $this->estadopedido = $estadopedido;
   }
-  public function setMarca($marca)
-  {
-    $this->marca = $marca;
+  public function setQuantidade($quantidade){
+    $this->quantidade = $quantidade;
   }
-  public function setDescricao($descricao)
-  {
-    $this->descricao = $descricao;
+  public function setNome($nome){
+    $this->nome = $nome;
   }
-  public function setValidade($validade)
-  {
-    $this->validade = $validade;
+  public function setNome_cliente($nome_cliente){
+    $this->nome_cliente = $nome_cliente;
   }
-  public function setTipo($tipo)
-  {
-    $this->tipo = $tipo;
+  public function setEndereco($endereco){
+  $this->endereco = $endereco;
   }
-  public function setImg_Produto($img_produto)
-  {
-    $this->img_produto = $img_produto;
+  public function setTelefone($telefone){
+    $this->telefone = $telefone;
   }
+
+  public function addPedido()
+  {
+      $PedidoDAO = new PedidoDAO();
+      $PedidoDAO->addPedido($this);
+  }
+
+  public function delPedido()
+  {
+      $PedidoDAO = new PedidoDAO();
+      $PedidoDAO->delPedido($this);
+  }
+
 }
+
+?>

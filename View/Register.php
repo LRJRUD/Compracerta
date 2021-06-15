@@ -2,7 +2,7 @@
 <!-- Register Start -->
 <div class="login justify-content-center align-items-center container text-center">
     <div class="container">
-        <form id="Register" action="addUsuario" method="post">
+        <form id="" action="addUsuario" method="post">
             <div class="login-form form-group">
                 <div class="row">
                     <h1 class="entrar-title justify-content-center container">Cadastro</h1>

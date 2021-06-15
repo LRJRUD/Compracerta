@@ -1,7 +1,7 @@
 <?php
 //classe que representa os itens do carrinho
 //cada item é formado pelo produto e a quantidade comprada
-require_once "Livro.php";
+require_once "Usuario.php";
 class ItemCarrinho{
    private $produto;
    private $quantidade;

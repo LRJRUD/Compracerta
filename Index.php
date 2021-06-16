@@ -21,11 +21,11 @@ if (isset($_GET['url'])) //se estiver preenchida, pega o valor
       $controlador = new Register();
       $controlador->processaRequisicao();
       break;
-      case "VIEW/ADDPRODUTO":
-        require "Controller/RegisterProduct.php";
-        $controlador = new RegisterProduct();
-        $controlador->processaRequisicao();
-        break;
+    case "VIEW/ADDPRODUTO":
+      require "Controller/RegisterProduct.php";
+      $controlador = new RegisterProduct();
+      $controlador->processaRequisicao();
+      break;
     default:
       break;
   }

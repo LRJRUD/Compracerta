@@ -28,7 +28,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -240,21 +240,27 @@
 // CEP
 $(document).ready(function () {
     /* Executa a requisição quando o campo CEP perder o foco */
-    $('#cep').blur(function () {
+    $('#cep').on('blur', function () {
         /* Configura a requisição AJAX */
-        $.ajax({
-            url: 'consulta_cep', /* URL que será chamada */
-            type: 'POST', /* Tipo da requisição */
-            data: 'cep=' + $('#cep').val(), /* dado que será enviado via POST */
-            dataType: 'json', /* Tipo de transmissão */
-            success: function (data) {
-                if (data.sucesso == 1) {
-                    $('#rua').val(data.rua);
-                    $('#bairro').val(data.bairro);
-                    $('#numero').focus();
-                }
-            }
-        });
-        return false;
-    })
+        if ($.trim($("#cep").val()) != "") {
+
+            $("#mensagem").html('(Aguarde, consultando CEP ...)');
+            $.getScript("http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep=" + $("#cep").val(), function () {
+
+                if (resultadoCEP["resultado"]) {
+                    $("#rua").val(unescape(resultadoCEP["tipo_logradouro"]) + " " + unescape(resultadoCEP["logradouro"]));
+                    $("#bairro").val(unescape(resultadoCEP["bairro"]));
+                };
+
+                $("#mensagem").html('');
+            });
+        };
+    });
+
+    $("#cep").inputmask({
+        mask: ["00000-000",],
+        keepStatic: true
+    });
+    return false;
+
 });

@@ -1,6 +1,6 @@
 <?php
 
-class Usuario
+class Usuariot
 {
 
   public $UserDAO;
@@ -17,10 +17,6 @@ class Usuario
 
   public function authenticate()
   {
-    if ($this->checkAcess()) {
-      redirect('logout');
-    } else {
-
       $email = $this->input->post('email');
       $senha = $this->input->post('senha');
 

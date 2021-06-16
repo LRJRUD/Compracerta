@@ -19,7 +19,7 @@ class Produtos
     return $this->id_produto;
   }
 
-  function getNome_Produto()
+  function getNome_produto()
   {
     return $this->nome_produto;
   }
@@ -49,7 +49,7 @@ class Produtos
     return $this->tipo;
   }
 
-  function getImg_Produto()
+  function getImg_produto()
   {
     return $this->img_produto;
   }
@@ -60,14 +60,14 @@ class Produtos
     $this->id_produto = $id_produto;
   }
 
-  public function setNomeProduto($nome_produto)
+  public function setNome_produto($nome_produto)
   {
     $this->nome_produto = $nome_produto;
   }
 
   public function setQuantidade($quantidade)
   {
-    $this->quantiade = $quantidade;
+    $this->quantidade = $quantidade;
   }
 
   public function setMarca($marca)
@@ -90,20 +90,20 @@ class Produtos
     $this->tipo = $tipo;
   }
 
-  public function setImg_Produto($img_produto)
+  public function setImg_produto($img_produto)
   {
     $this->img_produto = $img_produto;
   }
 
   public function addProdutos()
   {
-    $ProdutoDAO = new ProdutosDAO();
-    $ProdutoDAO->addProdutos($this);
+    $ProdutosDAO = new ProdutosDAO();
+    $ProdutosDAO->addProdutos($this);
   }
 
   public function delProdutos()
   {
-    $ProdutoDAO = new ProdutosDAO();
-    $ProdutoDAO->delProdutos($this);
+    $ProdutosDAO = new ProdutosDAO();
+    $ProdutosDAO->delProdutos($this);
   }
 }

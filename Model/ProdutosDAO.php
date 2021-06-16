@@ -8,8 +8,8 @@ class ProdutosDAO
     {
         try {
             $minhaConexao = Conexao::getConexao();
-            $sql = $minhaConexao->prepare("INSERT INTO produtos (nome_produto, quantidade, marca, descricao, validade, tipo, perfil_img)
-            values (:nome_produto, :quantidade, :marca, :descricao, :validade, :tipo, :perfil_img)");
+            $sql = $minhaConexao->prepare("insert into produtos (nome_produto, quantidade, marca, descricao, validade, tipo, img_produto)
+            values (:nome_produto, :quantidade, :marca, :descricao, :validade, :tipo, :img_produto)");
 
             //get's
             $nome_produto = $user->getNome_produto();
@@ -18,7 +18,7 @@ class ProdutosDAO
             $descricao = $user->getDescricao();
             $validade = $user->getValidade();
             $tipo = $user->getTipo();
-            $perfil_img = $user->getPerfil_img();
+            $img_produto = $user->getImg_produto();
 
             //param's
             $sql->bindParam("nome_produto", $nome_produto);
@@ -27,7 +27,7 @@ class ProdutosDAO
             $sql->bindParam("descricao", $descricao);
             $sql->bindParam("validade", $validade);
             $sql->bindParam("tipo", $tipo);
-            $sql->bindParam("perfil_img", $perfil_img);
+            $sql->bindParam("img_produto", $img_produto);
 
             $sql->execute();
 
@@ -46,7 +46,7 @@ class ProdutosDAO
     {
         try {
             $minhaConexao = Conexao::getConexao();
-            $sql = $minhaConexao->prepare("DELETE FROM produtos where id_produto = :id_produto");
+            $sql = $minhaConexao->prepare("delete from produtos where id_produto = :id_produto");
             $sql->bindParam("id_produto", $id_produto);
             $id_produto = $user->getId_produto();
 

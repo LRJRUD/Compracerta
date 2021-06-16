@@ -13,7 +13,7 @@ class Usuarios
     private $cep;
     private $bairro;
     private $rua;
-    private $n_Casa;
+    private $n_casa;
     private $complemento;
 
     //Get´s
@@ -63,7 +63,7 @@ class Usuarios
 
     function getN_Casa()
     {
-        return $this->n_Casa;
+        return $this->n_casa;
     }
 
     function getComplemento()
@@ -109,9 +109,9 @@ class Usuarios
         $this->rua = $rua;
     }
 
-    public function setN_Casa($n_Casa)
+    public function setN_Casa($n_casa)
     {
-        $this->n_Casa = $n_Casa;
+        $this->n_casa = $n_casa;
     }
 
     public function setComplemento($complemento)

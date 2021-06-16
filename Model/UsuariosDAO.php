@@ -7,7 +7,7 @@ class UsuariosDAO
     {
         try {
             $minhaConexao = Conexao::getConexao();
-            $sql = $minhaConexao->prepare("INSERT INTO usuarios (cpf, nome, email, senha, fone, cep, bairro, rua, n_casa, complemento)
+            $sql = $minhaConexao->prepare("insert into usuarios (cpf, nome, email, senha, fone, cep, bairro, rua, n_casa, complemento)
             values (:cpf, :nome, :email, :senha, :fone, :cep, :bairro, :rua, :n_casa, :complemento)");
 
             //get's
@@ -31,7 +31,7 @@ class UsuariosDAO
             $sql->bindParam("cep", $cep);
             $sql->bindParam("bairro", $bairro);
             $sql->bindParam("rua", $rua);
-            $sql->bindParam("n_Casa", $n_casa);
+            $sql->bindParam("n_casa", $n_casa);
             $sql->bindParam("complemento", $complemento);
 
             $sql->execute();

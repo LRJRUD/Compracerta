@@ -62,4 +62,4 @@ class Usuariot
 
     redirect('login');
   }
-}
+

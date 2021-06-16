@@ -126,48 +126,59 @@
                                 </div>
                                 <div class="tab-pane fade" id="tracker-tab" role="tabpanel" aria-labelledby="orders-nav">
                                 <div class="login justify-content-center align-items-center container text-center">
-                                    <div class="container">
-                                        <form id="registerProduto" action="addProduto" method="post">
-                                            <div class="login-form form-group">
-                                                <div class="row">
-                                                    <h1 class="entrar-title justify-content-center container">Cadastrar Produtos</h1>
-                                                    <div class="col-md-6">
-                                                        <label>Nome do produto</label>
-                                                        <input name="nome_produto" id="nome_produto" class="form-control" type="text" placeholder="Nome do produto" required>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label>Tipo</label>
-                                                        <input name="tipo" id="tipo" class="form-control" type="text" placeholder="Tipo" required>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label>Marca</label>
-                                                        <input name="marca" id="marca" class="form-control" type="text" placeholder="Marca" required>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label>Descrição</label>
-                                                        <input name="descricao" id="descricao" class="form-control" type="text" placeholder="Descrição" required>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label >Validade</label>
-                                                        <input name="validade" id="validade" class="form-control" type="date" placeholder="Validade" required>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label>Quantidade</label>
-                                                        <input name="quantidade" id="quantidade"  class="form-control" type="number" placeholder="Quantidade" required>
-                                                    </div>
-                                                    <div class="col-md-7">
-                                                        <label>Imagem</label>
-                                                        <input name="img_produto" id="img_produto" name="img_produto"  class="form-control" type="file" placeholder="Imagem do Produto" required>
-                                                    </div>
-                                                    
-                                                    <div class="col-md-12">
-                                                        <a class="btn" href="Home.php"><span>Voltar</span></a>
-                                                        <button id="btn-cadastro" class="btn" type="submit">Cadastrar</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
+    <div class="container">
+        <form id="registerProduto" action="addProduto" method="post">
+            <div class="login-form form-group">
+                <div class="row">
+                    <h1 class="entrar-title justify-content-center container">Cadastrar Produtos</h1>
+                    <div class="col-md-6">
+                        <label>Nome do produto</label>
+                        <input name="nome_produto" id="nome_produto" class="form-control" type="text" placeholder="Nome do produto" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Tipo do produto</label>
+                        <select name="tipo" id="tipo" class="form-control">
+                            <option></option>
+                            <option value="Congelado">Congelados</option>
+                            <option value="Bebidas">Bebidas</option>
+                            <option value="Mercearia">Mercearia</option>
+                            <option value="Limpeza">Limpeza</option>
+                            <option value="Higiene pessoal / Perfumaria">Higiene pessoal / Perfumaria</option>
+                            <option value="Frios / Laticínios">Frios / Laticínios</option>
+                            <option value="Carnes">Carnes</option>
+                            <option value="Descartaveis">Descartaveis</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Marca</label>
+                        <input name="marca" id="marca" class="form-control" type="text" placeholder="Marca" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Descrição</label>
+                        <input name="descricao" id="descricao" class="form-control" type="text" placeholder="Descrição" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Validade</label>
+                        <input name="validade" id="validade" class="form-control" type="date" placeholder="Validade" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Quantidade</label>
+                        <input name="quantidade" id="quantidade" class="form-control" type="number" placeholder="Quantidade" required>
+                    </div>
+                    <div class="col-md-17">
+                        <label>Imagem</label>
+                        <input name="img_produto" id="img_produto" name="img_produto" class="form-control" type="file" placeholder="Imagem do Produto" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <a class="btn" href="Home.php"><span>Voltar</span></a>
+                        <button id="btn-cadastro" class="btn" type="submit">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
                                 </div>
                                 </div>
                                 <div class="tab-pane fade" id="payment-tab" role="tabpanel" aria-labelledby="payment-nav">

@@ -8,7 +8,7 @@ class PedidosDAO
     {
         try {
             $minhaConexao = Conexao::getConexao();
-            $sql = $minhaConexao->prepare("INSERT INTO pedidos (valor_total, estado_pedido, quantidade_item, nome, nome_cliente, endereco, telefone)
+            $sql = $minhaConexao->prepare("insert into pedidos (valor_total, estado_pedido, quantidade_item, nome, nome_cliente, endereco, telefone)
             values (:valor_total, :estado_pedido, :quantidade_item, :nome, :nome_cliente, :endereco, :telefone)");
 
             //get

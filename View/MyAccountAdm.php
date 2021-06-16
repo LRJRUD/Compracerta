@@ -29,15 +29,37 @@
                         <div class="col-md-9">
                             <div class="tab-content">
                                 <div class="tab-pane fade show active" id="dashboard-tab" role="tabpanel" aria-labelledby="dashboard-nav">
-                                    <h4>Sua CompraCerta</h4> <!-- Substituir por < ?php echo $_POST["Classe"] ?> -->
-                                    <p>
+                                    <h4>Lista de Pedidos</h4> <!-- Substituir por < ?php echo $_POST["Classe"] ?> -->
+                                <p>
+                                <?php ?>
 
-                                        Somos o melhor supermercado em geração de valor para clientes,
-                                        acionistas e colaboradores, onde atuarmos.
+                                    <script>
+                                    function confirma(){
+                                    return confirm("Confirma a exclusão?");
+                                    
+                                    }
+                                    </script>
 
-                                    </p>
+                                   
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr> 
+                                            <th>código</th>
+                                            <th>Título</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <?php for($i=0;$i<count($listarProdutos);$i++){ ?>
+                                            <tr>
+                                            <td><?php echo $listarProdutos[$i]->getId_produto(); ?></td>
+                                            <td><?php echo $listarProdutos[$i]->getNome_produto(); ?></td>
+                                            </tr>   
+                                        <?php } ?>
+                                    </tbody>
+                                </table>                                      
+                                </p>
                                 </div>
-                                <div class="tab-pane fade" id="" role="tabpanel" aria-labelledby="">
+                                <div class="tab-pane fade" id="orders-tab" role="tabpanel" aria-labelledby="orders-nav">
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
                                             <thead class="thead-dark">
@@ -50,24 +72,55 @@
                                                     <th>Validade</th>
                                                     <th>Tipo</th>
                                                     <th>Imagem</th>
-                                                    <th>Status</th>
                                                     
                                                 </tr>
                                             </thead>
-                                           
                                             <tbody>
-                                            <?php for($i=0;$i<count($listaProdutos);$i++){ ?>
                                                 <tr>
-                                                <form method="post" action="delProdutos"  onSubmit="return confirma();">
-                                                    <td><?php echo $listaProdutos[$i]->getId_produto(); ?></td>
-                                                    <td><?php echo $listaProdutos[$i]->getNome_produto(); ?></td>                                 
+                                                    <td>1</td>
+                                                    <td>Nome do Produto</td>
+                                                    <td>5</td>
+                                                    <td>Nestle</td>
+                                                    <td>perceived</td>
+                                                    <td>02/22</td>
+                                                    <td>Mercearia</td>
+                                                    <td> <img src="img/ImgCart/arroz-namorado.png" alt="Image"></td>
+                                                    
                                                     <td>
-                                                    <input type="hidden" name="id" value="<?php echo $listaProdutos[$i]->getId_produto();?>">
-                                                    <input type="submit" class="" value= "Excluir">
-                                                </form> 
-                                                    </td>   
+                                                    <button class="btn">Excluir</button>
+                                                    <button class="btn">Editar</button>
+                                                    </td>
                                                 </tr>
-                                            <?php } ?>            
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Nome do Produto</td>
+                                                    <td>5</td>
+                                                    <td>Nestle</td>
+                                                    <td>perceived</td>
+                                                    <td>02/22</td>
+                                                    <td>Mercearia</td>
+                                                    <td> <img src="img/ImgCart/arroz-namorado.png" alt="Image"></td>
+                                                    
+                                                    <td>
+                                                    <button class="btn">Excluir</button>
+                                                    <button class="btn">Editar</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Nome do Produto</td>
+                                                    <td>5</td>
+                                                    <td>Nestle</td>
+                                                    <td>perceived</td>
+                                                    <td>02/22</td>
+                                                    <td>Mercearia</td>
+                                                    <td> <img src="img/ImgCart/arroz-namorado.png" alt="Image"></td>
+                                                    
+                                                    <td>
+                                                    <button class="btn">Excluir</button>
+                                                    <button class="btn">Editar</button>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>

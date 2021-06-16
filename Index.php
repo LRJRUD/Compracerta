@@ -26,6 +26,11 @@ if (isset($_GET['url'])) //se estiver preenchida, pega o valor
       $controlador = new RegisterProduct();
       $controlador->processaRequisicao();
       break;
+      case "VIEW/PRODUTODAO.PHP":
+        require "Controller/MyAccountAdm.php";
+        $controlador = new MyAccountAdm();
+        $controlador->processaRequisicao();
+      break; 
     default:
       break;
   }

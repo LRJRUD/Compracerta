@@ -1,14 +1,14 @@
 <?php
-require "Model/Usuario.php";
+require "Model/Produtos.php";
 class MyAccountAdm{
-    private $produto;
+    private $produtos;
 
     public function __construct(){
-        $this->produto = new Produto();
+        $this->produtos = new Produtos();
     }
 
     public function processaRequisicao(){
-        $listaProdutos = $this->produto->listarTodos();
+        $listarProdutos = $this->produtos->listarProdutos();
         require "View/MyAccountAdm.php";
     }
 }

@@ -226,7 +226,7 @@
                             <h3><span>R$ </span>6,52 /KG
                                 <a href="Wishlist.php"><i class="fa fa-heart"></i></a>
                             </h3>
-                            <a class="btn" href="Cart.php"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
+                            <a class="btn" href="Cart.php?cd=<?php echo $exibe['id_usuario'];?>"><i class="fa fa-shopping-cart"></i>Comprar Agora!</a>
                         </div>
                     </div>
                 </div>

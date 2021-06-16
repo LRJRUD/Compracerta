@@ -62,18 +62,8 @@ class ProdutosDAO
         try {
             $minhaConexao = Conexao::getConexao();
             $sql = $minhaConexao->prepare("select * from produtos");
-
-        $sql-> execute();
-        $result = $sql->setFetchMode(PDO::FETCH_ASSOC);;
-
+            $sql-> execute();
         
-        while ($linha = $sql->fetch(PDO::FETCH_ASSOC)) {
-            echo "ID: " . $linha['id_produto'] . "<br>";
-            echo "Nome: " . $linha['nome_produto'] . "<br>";
-            echo "Quantidade: " . $linha['quantidade'] . "<br>";
-            echo "Marca: " . $linha['marca'] . "<br><hr>";
-          }
-        return $lisProdutos;
        }
        catch(PDOException $e){
         return array();

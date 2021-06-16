@@ -3,6 +3,8 @@ require "Model/Usuarios.php";
 class ControllerDeleteUser
 {
 
+  private $user;
+
   public function __construct()
   {
     $this->user = new Usuarios();

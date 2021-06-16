@@ -1,6 +1,6 @@
 <?php
 require "Model/Usuarios.php";
-class ControllerFormUser
+class ControllerFormRegister
 {
 
     public function processaRequisicao()

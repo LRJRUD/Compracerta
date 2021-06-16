@@ -7,8 +7,13 @@ if (isset($_GET['url'])) //se estiver preenchida, pega o valor
   echo $url;
   switch ($url) {
     case "NOVOUSUARIO":
-      require "Controller/ControllerFormUser.php";
-      $controlador = new ControllerFormUser();
+      require "Controller/ControllerFormRegister.php";
+      $controlador = new ControllerFormRegister();
+      $controlador->processaRequisicao();
+      break;
+    case "VIEW/ADDUSUARIOS":
+      require "Controller/ControllerRegister.php";
+      $controlador = new ControllerRegister();
       $controlador->processaRequisicao();
       break;
     case "VIEW/DELETARUSUARIOS":
@@ -16,10 +21,15 @@ if (isset($_GET['url'])) //se estiver preenchida, pega o valor
       $controlador = new ControllerDeleteUser();
       $controlador->processaRequisicao();
       break;
-    case "VIEW/ADDUSUARIOS":
-      require "Controller/Register.php";
-      $controlador = new Register();
+    case "LOGAR":
+      require "Controller/ControllerFormLogin.php";
+      $controlador = new ControllerFormLogin();
       $controlador->processaRequisicao();
+      break;
+    case "VIEW/LOGIN":
+      require "Controller/ControllerLogin.php";
+      $controlador = new ControllerLogin();
+      $controlador->authenticate();
       break;
     case "VIEW/ADDPRODUTO":
       require "Controller/RegisterProduct.php";

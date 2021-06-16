@@ -7,8 +7,8 @@ class ItemCarrinho{
    private $quantidade;
    
    public function __construct($id, $quantidade){
-       $this->produto = new Produto();
-       $this->produto->setIDproduto($id);
+       $this->produto = new Produtos();
+       $this->produto->setId_produto($id);
        $this->produto->pesquisarProduto();
        $this->quantidade = $quantidade;
    }
@@ -30,4 +30,3 @@ class ItemCarrinho{
    }
   
 }
-?>

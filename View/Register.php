@@ -12,7 +12,7 @@
                     </div>
                     <div class="col-md-6">
                         <label>CPF</label>
-                        <input name="cpf" id="cpf" class="form-control" type="text" placeholder="CPF" required>
+                        <input name="cpf" id="cpf" class="form-control " maxlength="14" pattern="[\d.-]{14}" type="text" placeholder="CPF" required>
                     </div>
                     <div class="col-md-6">
                         <label>Email</label>
@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-md-6">
                         <label for="phone">Telefone</label>
-                        <input name="fone" id="fone" class="form-control" type="tel" placeholder="N° de Telefone" required>
+                        <input name="fone" id="fone" class="form-control" type="tel" maxlength="15" placeholder="N° de Telefone" required>
                     </div>
                     <div class="col-md-6">
                         <label>CEP</label>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-md-6">
                         <label>Rua</label>
-                        <input name="rua" id="rua" name="rua" id="rua" class="form-control" type="text" placeholder="Rua" required>
+                        <input name="rua" id="rua" class="form-control" type="text" placeholder="Rua" required>
                     </div>
                     <div class="col-md-6">
                         <label>Bairro</label>

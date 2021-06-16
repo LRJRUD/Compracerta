@@ -11,6 +11,10 @@
                         <input name="nome" id="nome" class="form-control" type="text" placeholder="Nome Completo" required>
                     </div>
                     <div class="col-md-6">
+                        <label>CPF</label>
+                        <input name="cpf" id="cpf" class="form-control" type="text" placeholder="CPF" required>
+                    </div>
+                    <div class="col-md-6">
                         <label>Email</label>
                         <input name="email" id="email" class="form-control" type="email" placeholder="E-mail" required>
                     </div>

@@ -1,29 +1,28 @@
 <?php
-require "Model/Usuario.php";
+require "Model/Usuarios.php";
 class Register
 {
-    private $usuario;
 
     public function __construct()
     {
-        $this->usuario = new Usuario();
+        $this->user = new Usuarios();
     }
 
     public function processaRequisicao()
     {
         //receber os dados do formulario e setar o objeto
-        $this->usuario->setEmail($_POST['email']);
-        $this->usuario->setSenha($_POST['senha']);
-        $this->usuario->setCpf($_POST['cpf']);
-        $this->usuario->setNome($_POST['nome']);
-        $this->usuario->setBairro($_POST["bairro"]);
-        $this->usuario->setFone($_POST["fone"]);
-        $this->usuario->setCep($_POST["cep"]);
-        $this->usuario->setRua($_POST["rua"]);
-        $this->usuario->setN_Casa($_POST["n_Casa"]);
-        $this->usuario->setComplemento($_POST["complemento"]);
+        $this->user->setCpf($_POST['cpf']);
+        $this->user->setNome($_POST['nome']);
+        $this->user->setEmail($_POST['email']);
+        $this->user->setSenha($_POST['senha']);
+        $this->user->setFone($_POST["fone"]);
+        $this->user->setCep($_POST["cep"]);
+        $this->user->setBairro($_POST["bairro"]);
+        $this->user->setRua($_POST["rua"]);
+        $this->user->setN_Casa($_POST["n_Casa"]);
+        $this->user->setComplemento($_POST["complemento"]);
 
-        if ($this->usuario->addUsuario()) {
+        if ($this->user->addUsuarios()) {
             header('Location:Home.php', true, 302);
         }
 

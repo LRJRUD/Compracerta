@@ -46,7 +46,7 @@ class PedidosDAO
     {
         try {
             $minhaConexao = Conexao::getConexao();
-            $sql = $minhaConexao->prepare("DELETE FROM pedido where id_pedido = :id_pedido");
+            $sql = $minhaConexao->prepare("DELETE FROM pedidos where id_pedido = :id_pedido");
             $sql->bindParam("id_pedido", $id_pedido);
             $id_pedido = $user->getId_pedido();
 

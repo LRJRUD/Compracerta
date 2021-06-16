@@ -1,20 +1,19 @@
 <?php
-require "Model/Usuario.php";
+require "Model/Usuarios.php";
 class ControllerDeleteUser
 {
-  private $Usuario;
 
   public function __construct()
   {
-    $this->Usuario = new Usuario();
+    $this->user = new Usuarios();
   }
 
   public function processaRequisicao()
   {
     //receber os dados do formulario e setar o objeto
-    $this->Usuario->setId_Usuario($_POST['id_Usuario']);
+    $this->user->setId_usuario($_POST['id_usuario']);
 
-    $this->Usuario->delUsuario();
+    $this->user->delUsuarios();
 
     // header('Location:ListarLivro.php', true,302);
   }

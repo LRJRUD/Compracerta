@@ -51,7 +51,7 @@
                                         <tbody>
                                         <?php for($i=0;$i<count($listarProdutos);$i++){ ?>
                                             <tr>
-                                            <td><?php echo $listarProdutos[$i]->getId_produto(); ?></td>
+                                            <td><?php echo $row_msg_cont['id_produto'] ?></td>
                                             <td><?php echo $listarProdutos[$i]->getNome_produto(); ?></td>
                                             </tr>   
                                         <?php } ?>

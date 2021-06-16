@@ -57,7 +57,7 @@ class ProdutosDAO
         }
     }
 
-    public function listarProdutos($user)
+    public function listarProdutos()
     {
         try {
             $minhaConexao = Conexao::getConexao();

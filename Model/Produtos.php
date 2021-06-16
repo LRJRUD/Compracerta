@@ -108,7 +108,7 @@ class Produtos
   }
 
   public function ListarProdutos(){
-    $ProdutoDAO = new ProdutoDAO();
-    return $ProdutoDAO->ListarProdutos();
+    $ProdutosDAO = new ProdutosDAO();
+    return $ProdutosDAO->ListarProdutos();
 }
 }

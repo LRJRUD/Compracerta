@@ -73,7 +73,7 @@ class ProdutosDAO
             echo "Quantidade: " . $linha['quantidade'] . "<br>";
             echo "Marca: " . $linha['marca'] . "<br><hr>";
           }
-        return $lisProdutos;
+        
        }
        catch(PDOException $e){
         return array();
